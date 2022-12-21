@@ -40,6 +40,6 @@ jobs:
          timeout-minutes: 340
          continue-on-error: true
          run: |
-           parallel -u ::: 'sudo bash cleanup.sh' 'git clone -b 720p https://${{ secrets.GIT_NAME }}:${{ secrets.GIT_TOKEN }}@github.com/${{ secrets.GIT_NAME }}/AutoAnimeBot.git bot && cd bot && sudo docker build . -t bot && sudo docker run bot'
+           parallel -u ::: 'sudo bash cleanup.sh' 'git clone -b main https://${{ secrets.GIT_NAME }}:${{ secrets.GIT_TOKEN }}@github.com/${{ secrets.GIT_NAME }}/AutoAnimeBot.git bot && cd bot && sudo docker build . -t bot && sudo docker run bot'
 #############################################################################################
        
