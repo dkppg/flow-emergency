@@ -1,12 +1,16 @@
-name: 720p
-  schedule:
+name: Run on workflows
+
+on:
+
+    schedule:
 
       - cron: "0 */6 * * *"
-on:
-  push:
-    paths:
-      - 'Records/720p.txt'
-  workflow_dispatch:
+
+    push:
+
+      branches: [ main ]
+
+    workflow_dispatch:
 
 jobs:
   build:
