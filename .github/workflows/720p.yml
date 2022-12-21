@@ -29,12 +29,7 @@ jobs:
        - name: Specs Check
          run: |
             bash specs.sh
-#############################################################################################
-       - uses: styfle/cancel-workflow-action@0.9.0
-         name: "Cancel duplicate workflow runs"
-         with:
-            all_but_latest: true
-            access_token: ${{ secrets.GH_TOKEN }}
+
 #############################################################################################
        - name: Cleaning up some space & Deploying and Running bot in ParallelParallel
          timeout-minutes: 340
