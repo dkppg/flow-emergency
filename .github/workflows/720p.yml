@@ -20,7 +20,7 @@ jobs:
            git config --global user.name ${{ secrets.GH_NAME }}
            git config --global user.email ${{ secrets.GH_MAIL }}
            git config --global credential.helper store
-           echo "https://Idkhowami:${{ secrets.github.token }}@github.com" > ~/.git-credentials
+           echo "https://Proindexis:${{ secrets.github.token }}@github.com" > ~/.git-credentials
 #############################################################################################
        - name: Apt Update packages and Upgrade them.
          run: |
